@@ -106,9 +106,9 @@ async function writePayloadTs(fileData: string) {
 }
 
 function fileExistCheck() {
-  if (existsSync("./payload.ts")) {
+  if (existsSync(`${DIRECTORY_PATH}/payload.ts`)) {
     logger("File Exists", "info");
-    unlink("./payload.ts", (err) => {
+    unlink(`${DIRECTORY_PATH}/payload.ts`, (err) => {
       if (err) {
         throw err;
       }

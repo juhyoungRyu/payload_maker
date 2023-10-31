@@ -150,9 +150,9 @@ function writePayloadTs(fileData) {
     });
 }
 function fileExistCheck() {
-    if ((0, fs_1.existsSync)("./payload.ts")) {
+    if ((0, fs_1.existsSync)("".concat(DIRECTORY_PATH, "/payload.ts"))) {
         logger("File Exists", "info");
-        (0, fs_1.unlink)("./payload.ts", function (err) {
+        (0, fs_1.unlink)("".concat(DIRECTORY_PATH, "/payload.ts"), function (err) {
             if (err) {
                 throw err;
             }
