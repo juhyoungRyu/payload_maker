@@ -1,0 +1,20 @@
+{
+  "name": "payload_maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc app.ts",
+    "dev": "pnpm run build && pnpm run make",
+    "make": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9"
+  }
+}
